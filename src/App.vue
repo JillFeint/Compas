@@ -6,10 +6,10 @@
       </div>
       <div class="btnHeader">
         <ul>
-          <li>inicio</li>
-          <li>chimbo</li>
-          <li>inicio</li>
-          <li>chimbo</li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Chimbo</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Chimbo</a></li>
         </ul>
       </div>
     <!-- </div> -->
@@ -66,14 +66,18 @@ components: {
   max-width: 50px;
   margin-left: 3em;
 }
-.btnHeader{
-  color: white;
-}
 .btnHeader ul {
   display: flex;
   gap: 10px;
   list-style: none;
   margin: 25px;
+}
+.btnHeader a {
+  color: white;
+  text-decoration: none;
+}
+.btnHeader a:hover {
+  color: gray;
 }
 .div-container{
   background-color: rgb(0, 0, 0);
