@@ -16,13 +16,7 @@
   </header>
   
   <div class="div-container">
-    <div class="logoHeader1">
-      <img  class="logoHeader11" src="./assets/WhatsApp Image 2024-02-04 at 12.51.05 PM.png" alt="">
-      <div class="overlay">
-      <!-- <carrucelCompas/> -->
-        <!-- Capa para la superposición oscura -->
-      </div> 
-    </div>
+    <portadaDeCompas/>
   </div>
   <div>
     <h1 class="tituloUnico">Compas de Hierro Colombia</h1>
@@ -31,12 +25,13 @@
 
 <script>
 // import carrucelCompas from "./components/carrucelDeVideos.vue";
-
-// export default{
-//   components: {
-//   carrucelCompas,
-// }
-// }
+import portadaDeCompas from "./components/portadaCompas.vue"
+export default{
+components: {
+  //   carrucelCompas,
+  portadaDeCompas,
+}
+}
 </script>
 
 <style>
@@ -80,36 +75,10 @@
   list-style: none;
   margin: 25px;
 }
-/* esto es provisional arreglar */
-.logoHeader1{
-  display: flex;
-  justify-content: center;
-  /* box-sizing: border-box; */
-  width: 100%;
-}
-.logoHeader11{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: 100%;
-  z-index: 1;
-}
 .div-container{
   background-color: rgb(0, 0, 0);
   height: 100%;
   flex-wrap: wrap;
-}
-.overlay {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  height: 30em;
-  max-height:30em;
-  width: 100%;
-  max-width: 100%;  
-  z-index: 10;
-  background-color: rgba(209, 209, 209, 0.5);
 }
 /* Este es el h1 del titulo del header */
 .tituloUnico{
