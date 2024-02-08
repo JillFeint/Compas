@@ -1,5 +1,5 @@
 <template>
-  <div class="div1Sec1">
+  <div class="div1Sec2">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore obcaecati 
       libero voluptatem reiciendis voluptatum modi. Alias ut et nulla tempora? Tenetur aut 
       laborum laudantium pariatur molestiae ut, vitae nihil!</p>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style>
-.div1Sec1 {
+.div1Sec2 {
   width: 100%;
   height: 100vh;
   background-color: blue;

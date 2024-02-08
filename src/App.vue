@@ -14,10 +14,12 @@
       </div>
     <!-- </div> -->
   </header>
-  <div class="div-container">
-    <portadaDeCompas/>
-  </div>
   <section class="sec1">
+    <div class="div-container">
+      <portadaDeCompas/>
+    </div>
+  </section>
+  <section class="sec2">
     <seccionOne/>
   </section>
 </template>
