@@ -14,22 +14,23 @@
       </div>
     <!-- </div> -->
   </header>
-  
   <div class="div-container">
     <portadaDeCompas/>
   </div>
-  <div>
-    <h1 class="tituloUnico">Compas de Hierro Colombia</h1>
-  </div>
+  <section class="sec1">
+    <seccionOne/>
+  </section>
 </template>
 
 <script>
 // import carrucelCompas from "./components/carrucelDeVideos.vue";
+import seccionOne from "./components/seccionOne.vue"
 import portadaDeCompas from "./components/portadaCompas.vue"
 export default{
 components: {
   //   carrucelCompas,
   portadaDeCompas,
+  seccionOne,
 }
 }
 </script>
@@ -39,7 +40,6 @@ components: {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
 }
 /* Header */
 .headerGlobal{
@@ -84,14 +84,7 @@ components: {
   height: 100%;
   flex-wrap: wrap;
 }
-/* Este es el h1 del titulo del header */
-.tituloUnico{
-  display: flex;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  box-sizing: border-box;
-  margin-top: 2%;
-}
+
 @media (max-width: 768px) {
   .tituloUnico {
     font-size: 16.5px;
