@@ -91,13 +91,13 @@ z-index: 20;
   outline: 2px solid #ff0000;
   background-color: #ff0000;
 }
-button:hover {
+.button:hover {
   color:beige;
   transform: scale(1.1);
   outline: 1px solid rgb(255, 255, 255);
   /* box-shadow: 2px 3px 6px -8px gray; */
 }
-button::before {
+.button::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -109,7 +109,7 @@ button::before {
   z-index: -1;
   transition: width 1000ms;
 }
-button:hover::before {
+.button:hover::before {
   width: 250%;
 }
 </style>
