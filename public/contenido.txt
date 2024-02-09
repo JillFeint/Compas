@@ -1,0 +1,3 @@
+En este caso, la ruta relativa para acceder a contenido.txt desde la carpeta public es simplemente /contenido.txt.
+
+Asegúrate de que la ruta del archivo y el nombre del archivo sean correctos y coincidan exactamente con lo que tienes en tu sistema de archivos. Una vez que Axios pueda acceder correctamente al archivo, el contenido de contenido.txt se asignará a la variable this.contenido y podrás utilizarlo en tu componente Vue.js.
