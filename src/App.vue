@@ -21,13 +21,13 @@
   </section>
   <section class="sec2">
     <seccionTwo/>
-    <seccionSecond/>
   </section>
 </template>
 
 <script>
+import seccionThree from "./components/seccionThree.vue"
 // import carrucelCompas from "./components/carrucelDeVideos.vue";
-import seccionTwo from "./components/seccionTwo.vue"
+// import seccionTwo from "./components/seccionTwo.vue"
 import portadaDeCompas from "./components/portadaCompas.vue"
 import seccionSecond from "./components/seccionSecond.vue"
 export default{
@@ -35,7 +35,6 @@ components: {
   //   carrucelCompas,
   portadaDeCompas,
   seccionTwo,
-  seccionSecond,
 }
 }
 </script>
