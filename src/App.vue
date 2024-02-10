@@ -21,26 +21,40 @@
     </div>
   </section>
   <section class="sec2">
-    <seccionSecond/>
+    <!-- <seccionSecond/>
+    <contactNos/> Esto no es para este proyecto creo, no mover sin preguntarme Angel -->
     <seccionTwo/>
   </section>
+  <footer class="footer"> &copy; Moncada, Ballestero & Jill Angel, Compas del codigo de hierro, 2024 Inc. All Rights Reserved.</footer>
 </template>
 
 <script>
 // import carrucelCompas from "./components/carrucelDeVideos.vue";
 import portadaDeCompas from "./components/portadaCompas.vue"
 import seccionTwo from "./components/seccionTwo.vue"
-import seccionSecond from "./components/seccionSecond.vue"
+// import seccionSecond from "./components/seccionSecond.vue"
 import seccionCarrucel from "./components/seccionCarrucel.vue"
-export default{
+// import contactNos from "./components/contactNos.vue"
+export default {
 components: {
   //   carrucelCompas,
   portadaDeCompas,
   seccionTwo,
-  seccionSecond,
+  // seccionSecond,
   seccionCarrucel,
-}
-}
+  // contactNos,
+},
+data() {
+    return {
+      mostrarComponenteContacto: false
+    };
+  },
+  methods: {
+    mostrarContacto() {
+      this.mostrarComponenteContacto = true;
+    }
+  },
+};
 </script>
 
 <style>
@@ -98,5 +112,12 @@ components: {
     font-size: 16.5px;
   }
 }
-/* Contenedo global */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282525;  
+  height: 2em;
+  color: white;
+}
 </style>

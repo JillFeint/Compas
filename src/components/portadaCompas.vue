@@ -8,9 +8,7 @@
         <h1>Compas de Hierro Colombia</h1>
     </div>
     <div class="divParrafo">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor ipsa! Ratione, 
-        recusandae? Amet cupiditate, blanditiis asperiores, architecto itaque voluptates 
-        mollitia accusamus ut consequuntur non ducimus natus aspernatur vitae necessitatibus?</p>
+        {{ contenido1 }}
     </div>
     <div class="divButton">
       <button class="button">Mas informacion</button>
@@ -19,7 +17,30 @@
 </template>
 
 <script>
-  export default {
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      contenido1: '',
+      estilos: 'custom-div'
+    }
+  },
+  mounted() {
+    this.cargarContenido();
+  },
+  methods: {
+    cargarContenido() {
+      axios.get('/textoOne.txt')
+        .then(response => this.contenido1 = response.data)
+        .catch(error => console.error('Error al cargar el contenido:', error));
+    }
+  },
+  computed: {
+    estilo() {
+      return ['custom-div', this.estilos];
+    }
+  }
 }
 </script>
 

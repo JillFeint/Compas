@@ -91,9 +91,7 @@
 </template>
 
 <script>
-// import "../card-slider/swiper-bundle.min.css"
 export default {
-
 }
 </script>
 
@@ -142,7 +140,8 @@ export default {
 }
 .card-wrapper{
 display: flex;
-gap: 10px;
+gap: 20px;
+margin-bottom: 30px;
 }
 .card-wrapper2{
 display: flex;
