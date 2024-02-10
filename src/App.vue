@@ -7,9 +7,9 @@
       <div class="btnHeader">
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Chimbo</a></li>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Chimbo</a></li>
+          <li><a href="#">Directorio</a></li>
+          <li><a href="#">Nose</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </div>
     <!-- </div> -->
@@ -17,24 +17,28 @@
   <section class="sec1">
     <div class="div-container">
       <portadaDeCompas/>
+      <seccionCarrucel/>
     </div>
   </section>
   <section class="sec2">
+    <seccionSecond/>
     <seccionTwo/>
   </section>
 </template>
 
 <script>
-import seccionThree from "./components/seccionThree.vue"
 // import carrucelCompas from "./components/carrucelDeVideos.vue";
-// import seccionTwo from "./components/seccionTwo.vue"
 import portadaDeCompas from "./components/portadaCompas.vue"
+import seccionTwo from "./components/seccionTwo.vue"
 import seccionSecond from "./components/seccionSecond.vue"
+import seccionCarrucel from "./components/seccionCarrucel.vue"
 export default{
 components: {
   //   carrucelCompas,
   portadaDeCompas,
   seccionTwo,
+  seccionSecond,
+  seccionCarrucel,
 }
 }
 </script>
